@@ -1,0 +1,417 @@
+html, * {
+	box-sizing: border-box;
+	font-family: poppins, sans-serif;
+}
+.section-mt{
+	margin-top: 120px;
+}
+header{
+	position: relative;
+}
+header:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 36%;
+    height: 100%;
+	background: rgba(0,123,255,.5);
+    opacity: 1;
+    content: '';
+    z-index: -1;
+}
+.navbar{
+	padding: 0 15px;
+	border-bottom: 1px solid #ccc;
+}
+.navbar-brand img {
+    padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 25px; 
+	color: #000!important;
+	width: 40px;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+	font-size: 16px;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    font-weight: 400;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover{
+	color: #000000;
+	transition: 0.6s all;
+	box-shadow: inset 0 -0.45em 0 #fedc2a;	
+}
+.toggler-icon {
+	color: black;
+}
+.secondary{
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	padding: 0 15px;
+	border: none;
+}
+header .row{
+	height: 800px;
+	position: relative;
+}
+.no-gutter{
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
+ header .header-bg{
+	background-image: url(../img/header-profile.png);
+	width: 45%;
+    height: 600px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center; display: block;
+	position: relative;
+	border: 30px solid #f8f9fa;
+	margin-top: 100px;
+}
+header .header-bg:after {
+    position: absolute;
+    top: 42%;
+    width: 16%;
+    height: 3px;
+    background: #0075f6;
+    content: '';
+    z-index: -1;
+    right: -50px;
+}
+header .outer-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width:1270px;
+	margin: 0 auto;
+}
+header .outer-box .social-link{
+	position: absolute;
+	bottom: 20px;
+	padding: 10px 10px 10px 0;
+}
+header .outer-box .social-link a{
+	color: #323232;
+	font-weight: 500;
+	margin: 10px 20px 10px 0;
+	display: inline-block;
+	box-shadow: inset 0 -0.07em 0 #fedc2a;
+}
+header .outer-box .social-link a:hover{
+	text-decoration: none;
+	transition: 0.5s all;
+	box-shadow: inset 0 -0.85em 0 #fedc2a;
+}
+header .outer-box .info-box {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    padding-left: 3rem;
+	padding-right: 3em;
+	user-select: none;
+}
+header .outer-box .subheading {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+	color: #0075f6;
+}
+header .outer-box .info-box h1{
+	font-size: 62px;
+    color: #000;
+	font-weight: 800;
+	margin: 30px 0px 30px 0px;
+}
+header .outer-box .info-box h1 span{
+	color: #0075f6;
+}
+header .outer-box .info-box h2{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.5;
+    color:#000;
+}
+header .outer-box .info-box a{
+	padding: 8px 22px;
+	color: #323232;
+	border: 1px solid #323232;
+	border-radius: 22px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	margin-top: 20px;
+	display: inline-block;
+	transition: 0.6s all;
+	margin-right: 8px;
+}
+header .outer-box .info-box a:hover{
+	color: #fff;
+	background-color:#0075f6; 
+	border: 1px solid #0075f6;
+}
+.about-outer-imgbox{
+	background-color: #f8f9fa;
+	width: 85%;
+	height: 610px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.about-me .about-imgbox{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	padding: 0 15px 0 15px;
+	height: 550px;
+}
+.about-me .about-imgbox img{
+	width:100%;
+	height: 550px;
+	object-fit: cover;
+}
+.about-me .about-text{
+	color: #323232;
+}
+.about-me .about-text h2{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+ .subheading-underline{
+	position: relative;
+	font-size: 16px;
+	font-weight: 500;
+}
+.subheading-underline:before {
+    content: " ";
+    display: inline-block;
+    height: 4px;
+    top: 30px;
+    position: absolute;
+    width: 80px;
+    zoom: 1;
+    background: #484848;
+}
+.about-me .about-text .tag-line{
+	position: relative;
+}
+.about-me .about-text .tag-line p{
+	font-weight: 500;
+	padding-left: 20px;
+}
+.about-me .about-text .tag-line:before{
+	content: " ";
+    display: inline-block;
+    height: 65px;
+    position: absolute;
+    width: 5px;
+    background: #fedc2a;
+}
+.Portfolio-sect h2{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 800;	
+}
+.portfolio-box-bg{
+	background-color: aliceblue;
+	height: 100%;
+}
+.portfolio-box-bg .img-work{
+	overflow: hidden;
+}
+.Portfolio-sect .portfolio-box-bg .img-work img{
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: 0.9s all;
+}
+.Portfolio-sect .portfolio-box-bg .img-work img:hover{
+	transform: scale(1.02);
+}
+.Portfolio-sect .portfolio-box-bg .text-box{
+	padding: 30px;
+}
+.Portfolio-sect .portfolio-box-bg .text-box h3 {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 600;	
+	text-decoration: none;
+	color: #323232;
+}
+.Portfolio-sect .portfolio-box-bg .text-box .visit-btn {
+    color: #323232;
+    border: 1px solid #323232;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+.Portfolio-sect .portfolio-box-bg .visit-btn:hover {
+	color: #0075f6;
+	border: 1px solid #0075f6;
+}
+.skill-bg h2{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 800;	
+}
+.skill-bg .icon-box{
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 8px solid #AC6FD9;	
+}
+.skill-bg .icon-box i{
+	font-size: 50px;	
+}
+.copy-right {
+	background-color: #141a22;
+	padding: 2rem;
+}
+/*=============== responsive design ================*/
+@media (max-width: 767px){
+.container {
+    max-width: 550px;
+	}
+}
+@media (max-width:1199px){
+	header .outer-box{
+		max-width: 970px;
+	}	
+}
+@media (max-width:991px){
+	header .outer-box{
+		max-width: 750px;
+	}	
+}
+@media (max-width:1199px){
+	header .outer-box .info-box h1{
+		font-size: 50px;
+	}
+	header .outer-box .info-box h2{
+		font-size: 25px;
+	}
+}
+@media (max-width:991px){
+	header .row{
+		height: 660px;
+	}
+	 header .header-bg{
+		height: 460px;
+		width: 50%;
+	}
+	header .outer-box .info-box {
+		padding-right: 0;
+	}
+	header .outer-box .info-box h1{
+		font-size: 36px;
+		margin: 25px 0px 25px 0px;
+	}
+	header .outer-box .info-box h2{
+		font-size: 18px;
+	}
+	header .outer-box .info-box a{
+		padding: 6px 18px;
+		font-size: 14px;
+	}
+	header:after {
+		width: 35%;
+	}
+	.Portfolio-sect .img-work img{
+		height: 300px;
+		object-fit: cover;
+	}
+}
+@media (max-width:767px){
+	header .row{
+		height: 800px;
+	}
+	 header .header-bg{
+		width: 100%;
+		height: 600px;
+		border: 20px solid #ced4da;
+	}
+	header .header-bg:after {
+		position: unset;
+	}
+	header .outer-box .info-box {
+		width: 100%;
+		padding-left: 2rem;
+    	padding-right: 2em;
+		text-align: center;
+	}
+	header .outer-box .info-box h1{
+		font-size: 50px;
+		color: #fff;
+	}
+	header .outer-box .info-box h2{
+		font-size: 30px;
+		color: #fff;
+	}
+	header .outer-box .info-box a{
+		color: #fff;
+		border: 1px solid #0075f6;
+		padding: 8px 22px;
+		font-size: 16px;
+	}
+	header .header-bg .overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000000;
+		opacity: 0.2;
+	}
+	header:after {
+		width: 60%;
+	}
+}
+@media (max-width:575px){
+	.navbar-brand {
+		font-size: 22px; 
+	}
+	.navbar-expand-md .navbar-nav .nav-link{
+		font-size: 16px;
+		padding-top: .7rem;
+		padding-bottom: .7rem;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: #000000;
+		font-weight: 400;
+	}
+	header .row{
+		height: 740px;
+	}
+	 header .header-bg{
+		width: 100%;
+		height: 540px;
+	}
+	header .outer-box .info-box h1{
+		font-size: 40px;
+	}
+	header .outer-box .info-box h2{
+		font-size: 25px;
+	}
+header:after {
+	width: 70%;
+}
+.Portfolio-sect .img-work img{
+	height: 300px;
+	object-fit: cover;
+}
+}
