@@ -269,15 +269,35 @@ header .outer-box .info-box a:hover{
 	text-transform: uppercase;
 	font-weight: 800;	
 }
-.skill-bg .icon-box{
-	width:200px;
-	height: 200px;
-	border-radius: 50%;
-	border: 8px solid #AC6FD9;	
-}
-.skill-bg .icon-box i{
-	font-size: 50px;	
-}
+.skills{
+	background-color: #ddd;
+    width: 60%;
+    height: 5px;
+    position: relative;
+    margin-top: 60px;
+    border: 20px;
+  }
+  .title-bar{
+	position:absolute;
+	top:-35px;
+	margin:5px
+  }
+  .title-bar h5{
+	font-size: 16px;
+  }
+  .skills span {
+	float:right;
+	margin-top:-22px;
+	margin-right:5px;
+	border:20px;
+  }
+  
+  .skillbar{
+	background-color: #323232;
+    width: 0;
+    height: 5px;
+    border: 10px;
+  }
 .copy-right {
 	background-color: #141a22;
 	padding: 2rem;
@@ -331,9 +351,11 @@ header .outer-box .info-box a:hover{
 	header:after {
 		width: 35%;
 	}
-	.Portfolio-sect .img-work img{
+	.skills{
+		width: 80%;
+	  }
+	.Portfolio-sect .portfolio-box-bg .img-work img{
 		height: 300px;
-		object-fit: cover;
 	}
 }
 @media (max-width:767px){
