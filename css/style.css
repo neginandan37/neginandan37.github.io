@@ -3,7 +3,7 @@ html, * {
 	font-family: poppins, sans-serif;
 }
 .section-mt{
-	margin-top: 120px;
+	padding-top: 120px;
 }
 header{
 	position: relative;
@@ -22,7 +22,7 @@ header:after {
 }
 .navbar{
 	padding: 0 15px;
-	border-bottom: 1px solid #ccc;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .navbar-brand img {
     padding-top: 1rem;
@@ -31,19 +31,22 @@ header:after {
 	color: #000!important;
 	width: 40px;
 }
-.navbar-expand-md .navbar-nav .nav-link{
+.navbar-expand-sm .navbar-nav .nav-item{
+	padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar-expand-sm .navbar-nav .nav-link{
 	font-size: 16px;
     padding-top: .7rem;
     padding-bottom: .7rem;
-    padding-left: 20px;
-    padding-right: 20px;
     color: #000000;
-    font-weight: 400;
+	font-weight: 400;
+	display: inline-block;
 }
-.navbar-expand-md .navbar-nav .nav-link:hover{
-	color: #000000;
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #000000;
 	transition: 0.6s all;
-	box-shadow: inset 0 -0.45em 0 #fedc2a;	
+	box-shadow: inset 0 -0.45em 0 #fedc2a;
 }
 .toggler-icon {
 	color: black;
@@ -53,7 +56,6 @@ header:after {
 	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 	padding: 0 15px;
-	border: none;
 }
 header .row{
 	height: 800px;
@@ -97,7 +99,7 @@ header .outer-box {
 header .outer-box .social-link{
 	position: absolute;
 	bottom: 20px;
-	padding: 10px 10px 10px 0;
+	padding: 10px 0;
 }
 header .outer-box .social-link a{
 	color: #323232;
@@ -217,6 +219,18 @@ header .outer-box .info-box a:hover{
     width: 5px;
     background: #fedc2a;
 }
+.about-me .about-text a{
+	padding: 8px 22px;
+    color: #323232;
+    border: 1px solid #323232;
+    border-radius: 22px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.6s all;
+    margin-right: 8px;
+}
 .Portfolio-sect h2{
 	font-size: 50px;
 	text-transform: uppercase;
@@ -231,8 +245,6 @@ header .outer-box .info-box a:hover{
 }
 .Portfolio-sect .portfolio-box-bg .img-work img{
 	width: 100%;
-	height: 450px;
-	object-fit: cover;
 	cursor: pointer;
 	transition: 0.9s all;
 }
@@ -264,6 +276,7 @@ header .outer-box .info-box a:hover{
 	color: #0075f6;
 	border: 1px solid #0075f6;
 }
+
 .skill-bg h2{
 	font-size: 50px;
 	text-transform: uppercase;
@@ -271,7 +284,7 @@ header .outer-box .info-box a:hover{
 }
 .skills{
 	background-color: #ddd;
-    width: 60%;
+    width: 70%;
     height: 5px;
     position: relative;
     margin-top: 60px;
@@ -288,12 +301,11 @@ header .outer-box .info-box a:hover{
   .skills span {
 	float:right;
 	margin-top:-22px;
-	margin-right:5px;
 	border:20px;
   }
   
   .skillbar{
-	background-color: #323232;
+	background-color: #0075f6;
     width: 0;
     height: 5px;
     border: 10px;
@@ -354,9 +366,6 @@ header .outer-box .info-box a:hover{
 	.skills{
 		width: 80%;
 	  }
-	.Portfolio-sect .portfolio-box-bg .img-work img{
-		height: 300px;
-	}
 }
 @media (max-width:767px){
 	header .row{
@@ -365,7 +374,7 @@ header .outer-box .info-box a:hover{
 	 header .header-bg{
 		width: 100%;
 		height: 600px;
-		border: 20px solid #ced4da;
+		border: 2px solid #f8f9fa;
 	}
 	header .header-bg:after {
 		position: unset;
@@ -375,6 +384,10 @@ header .outer-box .info-box a:hover{
 		padding-left: 2rem;
     	padding-right: 2em;
 		text-align: center;
+		margin-top: 100px;
+	}
+	header .outer-box .subheading {
+		display: none;
 	}
 	header .outer-box .info-box h1{
 		font-size: 50px;
@@ -385,10 +398,7 @@ header .outer-box .info-box a:hover{
 		color: #fff;
 	}
 	header .outer-box .info-box a{
-		color: #fff;
-		border: 1px solid #0075f6;
-		padding: 8px 22px;
-		font-size: 16px;
+		display: none;
 	}
 	header .header-bg .overlay {
 		position: absolute;
@@ -404,17 +414,8 @@ header .outer-box .info-box a:hover{
 	}
 }
 @media (max-width:575px){
-	.navbar-brand {
-		font-size: 22px; 
-	}
-	.navbar-expand-md .navbar-nav .nav-link{
-		font-size: 16px;
-		padding-top: .7rem;
-		padding-bottom: .7rem;
-		padding-left: 20px;
-		padding-right: 20px;
-		color: #000000;
-		font-weight: 400;
+	.navbar{
+		background-color: #fff;
 	}
 	header .row{
 		height: 740px;
@@ -432,8 +433,30 @@ header .outer-box .info-box a:hover{
 header:after {
 	width: 70%;
 }
+.skills{
+    width: 100%
+  }
+  .title-bar h5{
+	font-size: 14px;
+  }
+  .skills span {
+	font-size: 12px;
+  }
 .Portfolio-sect .img-work img{
 	height: 300px;
 	object-fit: cover;
 }
 }
+@media (max-width:431px){
+	header .outer-box .info-box {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	header .outer-box .info-box h1 {
+		font-size: 30px;
+		margin: 25px 0px 10px 0px;
+	}
+	header .outer-box .info-box h2 {
+		font-size: 20px;
+	}
+	}

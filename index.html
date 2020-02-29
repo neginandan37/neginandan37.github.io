@@ -12,25 +12,25 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark  fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/S-icon.png" alt=""></a>
+            <a class="navbar-brand" href="#section1"><img src="img/S-icon.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="toggler-icon"><i class="fas fa-sliders-h"></i> MENU</span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#section1">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#section2">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Skill</a>
+                    <a class="nav-link" href=#section3>Skill</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#section4">Portfolio</a>
                   </li>    
                 </ul>
               </div>  
@@ -38,30 +38,29 @@
     </nav>
     
     <div class="container">
-        <div class="row no-gutter">
+        <div class="row no-gutter" id="section1">
             <div class="header-bg"><div class="overlay"></div></div>
             <div class="outer-box">
                 <div class="social-link">
                     <a href="http://">Github</a>
                     <a href="http://">Facebook</a>
                     <a href="http://">Twiter</a>
-                    <a href="http://">Insta</a>
                 </div>
                 <div class="info-box">
                   <span class="subheading">Hi!</span>
                   <h1>I'm <span>Nandan Negi</span></h1>
                   <h2>UI Devloper and Web Designer</h2>
-                  <a href="#">Portfolio</a>
-                  <a href="#">Resume</a>
+                  <a href="#section4">PORTFOLIO</a>
+                  <a href="pdf/NANDAN resume.pdf">RESUME</a>
               </div>
             </div>
         </div>
     </div>
 
 </header>
-<section class="section-mt">
+<section class="section-mt"  id="section2">
     <div class="container">
-        <div class="row mt-5 about-me">
+        <div class="row about-me">
             <div class="col-md-5">
                 <div class="about-outer-imgbox">
                     <div class="about-imgbox">
@@ -71,26 +70,24 @@
             </div>
             <div class="col-md-7 pl-md-5">
                 <div class="about-text mt-5 mt-md-0">
-                <h2>About Me</h2>
-                <span class=" subheading-underline">A little more about me</span>
-                <p class="mt-5">I’m a front-end and UI / UX developer based in New Delhi. I love the Web platform and I want to make it better for everyone. And I consider myself to be completely blessed that I get to build it for a living.</p>
-                <p>Looking for a challenging role in a reputable organization to utilize my technical, database, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.</p>
-                <ul>
-                    <li>Organized, pro-active and a self-starter.</li>
-                    <li>A team player and clear communicator, and a keenness for collaboration.</li>
-                    <li>Adaptable and with a willingness to learn new skills and techniques - including proprietary software.</li>
-                </ul>
-                <div class="tag-line">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias labore itaque architecto dolore! Deserunt velit natus pariatur laudantium quisquam et!</p>
-                 </div>
+                    <h2>About Me</h2>
+                    <span class=" subheading-underline">A little more about me</span>
+                    <p class="mt-5">I’m a front-end and UI / UX developer based in New Delhi. I love the Web platform and I want to make it better for everyone. And I consider myself to be completely blessed that I get to build it for a living.</p>
+                    <p>Looking for a challenging role in a reputable organization to utilize my technical, database, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.</p>
+                    <div class="tag-line">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias labore itaque architecto dolore! Deserunt velit natus pariatur laudantium quisquam et!</p>
+                    </div>
+                    <div>
+                    <a href="pdf/NANDAN resume.pdf">RESUME ></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="section-mt skill-bg">
+<section class="section-mt skill-bg" id="section3">
     <div class="container">
-        <h2 class="mb-5">Skill</h2>
+        <h2 class="mb-5">My Skill</h2>
         <div class="skills" data-percent="90%">
             <div class="title-bar">
               <h5>Photoshop</h5>
@@ -112,7 +109,7 @@
               <h5>Css</h5>
             </div>
             <div class="skillbar">
-                <span>85%</span>
+                <span>75%</span>
             </div>  
     </div>
     <div class="skills" data-percent="40%">
@@ -120,17 +117,17 @@
           <h5>Javascript</h5>
         </div>
         <div class="skillbar">
-            <span>85%</span>
+            <span>40%</span>
         </div>  
 </div>
     </div>
 </section>
-<section class="section-mt">
+<section class="section-mt" id="section4">
     <div class="container Portfolio-sect">
         <h2>My Work</h2>
         <span class=" subheading-underline">Work I have done so far.</span>
-        <div class="row mt-5">
-            <div class="col-md-6 mb-sm-5">
+        <div class="row">
+            <div class="col-md-6 mt-5">
                 <div class="portfolio-box-bg">
                     <div class="img-work">
                         <img src="img/yoga.jpg" alt="">
@@ -142,10 +139,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6"> 
+            <div class="col-md-6 mt-5"> 
                 <div class="portfolio-box-bg">
                     <div class="img-work">
-                        <img src="img/yogmantra.png" alt="">
+                        <img src="img/yogmantra.jpg" alt="">
                     </div>
                     <div class="text-box">
                         <h3>Yoga Mantra</h3> 
@@ -156,8 +153,8 @@
             </div>
         </div>
 
-        <div class="row mt-5 align-items-center">
-            <div class="col-md-6 mb-sm-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mt-5">
                 <div class="portfolio-box-bg">
                     <div class="img-work">
                         <img src="img/yoga.jpg" alt="">
@@ -169,10 +166,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6"> 
+            <div class="col-md-6 mt-5"> 
                 <div class="portfolio-box-bg">
                     <div class="img-work">
-                        <img src="img/yogmantra.png" alt="">
+                        <img src="img/yogmantra.jpg" alt="">
                     </div>
                     <div class="text-box">
                         <h3>Yoga Mantra</h3> 
@@ -207,7 +204,7 @@
 
     jQuery(this).find('.skillbar').animate({
       width:jQuery(this).attr('data-percent')
-    },6000); 
+    },4000); 
     
 });
  }                
@@ -226,6 +223,29 @@ else if($("nav").hasClass('secondary')){
     $("nav").removeClass('secondary');
     }
  });
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
     });
 </script>
 </html>
