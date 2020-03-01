@@ -442,10 +442,6 @@ header:after {
   .skills span {
 	font-size: 12px;
   }
-.Portfolio-sect .img-work img{
-	height: 300px;
-	object-fit: cover;
-}
 }
 @media (max-width:431px){
 	header .outer-box .info-box {
